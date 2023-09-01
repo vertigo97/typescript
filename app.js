@@ -1,18 +1,21 @@
-function add(a, b, showResult, phrase) {
-    // if(typeof a !== 'number' || typeof b !== 'number') {
-    //     throw new ErrorEvent('Incorrect input!')
-    // }
-    // else {
-    var result = a + b;
-    if (showResult) {
-        console.log(phrase + result);
-    }
-    else {
-        return result;
-    }
+// const person: {
+//     name: string;
+//     age: number; 
+// } = {
+var person = {
+    name: 'Adnan',
+    age: 30,
+    hobbies: [
+        'Sports', 'Cooking'
+    ],
+    role: [2, 'author']
+};
+person.role.push('admin');
+person.role[1] = 4;
+var favouriteSports;
+favouriteSports = ['Sports', 'Cooking', 'Football'];
+console.log(person.name);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
 }
-var number1 = 4;
-var number2 = 3.5;
-var printRes = true;
-var quoteResult = "The result is :";
-add(number1, number2, printRes, quoteResult);
