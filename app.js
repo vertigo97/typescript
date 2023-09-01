@@ -1,16 +1,14 @@
-function add(n1, n2) {
-    return n1 + n2;
+"use strict";
+let userInput;
+let userName;
+userInput = 5;
+userInput = "adoo";
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-function printResult(n) {
-    console.log("the number is" + n);
+function generateError(message, code) {
+    throw {
+        message: message, errCode: code
+    };
 }
-function addHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-addHandle(10, 20, function (result) {
-    console.log(result);
-});
-var combineValues;
-combineValues = add;
-console.log(combineValues(8, 9));
+generateError("an errror occured", 443);
