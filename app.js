@@ -1,21 +1,16 @@
-// const person: {
-//     name: string;
-//     age: number; 
-// } = {
-var person = {
-    name: 'Adnan',
-    age: 30,
-    hobbies: [
-        'Sports', 'Cooking'
-    ],
-    role: [2, 'author']
-};
-person.role.push('admin');
-person.role[1] = 4;
-var favouriteSports;
-favouriteSports = ['Sports', 'Cooking', 'Football'];
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function add(n1, n2) {
+    return n1 + n2;
 }
+function printResult(n) {
+    console.log("the number is" + n);
+}
+function addHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+addHandle(10, 20, function (result) {
+    console.log(result);
+});
+var combineValues;
+combineValues = add;
+console.log(combineValues(8, 9));
