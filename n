@@ -1,0 +1,8 @@
+starting tsypescript:
+
+
+1. setup environment (index.html,connect with js that will be created with ts file)
+2. initialize npm setup : (npm init)
+3. start lite-server: npm start (npm install --save-dev lite-server)
+
+

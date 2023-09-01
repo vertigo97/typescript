@@ -1,0 +1,7 @@
+            
+        typescript core types:
+
+            number: 1, 5.3, -10... no differentiation 
+            string: 'Hi', "hi", `hi`... all text values 
+            boolean: true, false
+
